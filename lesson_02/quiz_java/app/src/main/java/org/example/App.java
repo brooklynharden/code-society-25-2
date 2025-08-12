@@ -88,10 +88,64 @@ private static makeQuizQuestions3(){
         Map.of(
             AnswerChoice.A,"git commit",
             AnswerChoice.B, "git merge",
-            AnswerChoice.C,"Push changes to the server",
-            AnswerChoice.D,"Write code directly in GitHub"
+            AnswerChoice.C,"git branch",
+            AnswerChoice.D,"git pull"
+        ), AnswerChoice.B
+    );
+}
+
+
+private static makeQuizQuestions4(){
+    return MultipleChoiceQuizQuestion (
+        4,
+        "Which IDE is being used in the class?",
+        Map.of(
+            AnswerChoice.A,"Eclipse",
+            AnswerChoice.B,"IntelliJ IDEA",
+            AnswerChoice.C,"NetBeans",
+            AnswerChoice.D,"VS Code"
         ), AnswerChoice.D
     );
 }
 
 
+private static makeQuizQuestions5(){
+    return MultipleChoiceQuizQuestion (
+        5,
+       "What feature allows developers to work from the same pre-configured environment in VS Code?",
+        Map.of(
+            AnswerChoice.A,"Extensions",
+            AnswerChoice.B,"Debugger",
+            AnswerChoice.C,"Dev Containers",
+            AnswerChoice.D,"Source Control"
+        ), AnswerChoice.C
+    );
+}
+
+
+private static makeQuizQuestions6(){
+    return MultipleChoiceQuizQuestion (
+        6,
+        "What is NOT a reason for using an IDE?",
+        Map.of(
+            AnswerChoice.A,"Editing and refactoring code",
+            AnswerChoice.B,"Browsing code",
+            AnswerChoice.C,"Playing music",
+            AnswerChoice.D,"Managing source control"
+        ), AnswerChoice.C
+    );
+}
+
+
+private static makeQuizQuestions7(){
+    return MultipleChoiceQuizQuestion (
+        7,
+        "What is the command to list files in the current directory?",
+        Map.of(
+            AnswerChoice.A,"pwd"
+            AnswerChoice.B,"ls",
+            AnswerChoice.C,"cd",
+            AnswerChoice.D,"mkdir"
+        ), AnswerChoice.B
+    );
+}
